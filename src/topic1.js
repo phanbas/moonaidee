@@ -1,0 +1,85 @@
+import logo from './logo.svg';
+import './App.css';
+import React, { useEffect, useInsertionEffect } from 'react';
+import {useState} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button, Card, Row, Col, Container, Navbar, Nav, Jumbotron} from 'react-bootstrap';
+import { BrowserRouter as Router,Routes, Route, Link} from 'react-router-dom';
+import HomepageTopbar from './homepage-topbar';
+import HomepageFooter from './homepage-footer';
+
+
+function Topic1(){
+    const [data, setData] = useState([])
+  useEffect(()=>{
+    fetch("https://phanbas-strapi.herokuapp.com/api/loves/")
+    .then(res =>res.json())
+    .then(data => setData(data.data));
+  }, []);
+
+
+
+    return (
+        <>
+        
+        <HomepageTopbar/>
+        <Row>
+          <img src={require('./pic/topic1-picshow.png')} ></img>
+        </Row>
+        <Container>
+        <br/>
+        <Card body>
+        <h2 className='desc'>ด้วยความที่คนไทยเรามีความเชื่อเกี่ยวกับเรื่องดวงและไสยศาสตร์กันอยู่แล้ว ทำให้ ณ 
+        ตอนนี้คนไทยเราเปิดรับความเชื่อเกี่ยวกับมูเตลูกันกว้างขวางมากขึ้น ไม่ว่าจะเป็น การใส่อุปกรณ์ต่างๆ (กำไร สร้อยคอ ฯลฯ) 
+        การสักยันต์ วอลล์เปเปอร์หน้าจอโทรศัพท์เสริมดวง การขอพรตามสถานที่ต่างๆ และนี่คือสิ่งที่เรากำลังจะพูดถึงนั่นก็คือ “วัด” หรือ “สถานที่”
+        ทั่วประเทศที่เหล่าคนไทยได้มีการเดินทางไปด้วยหวังที่ว่า เราจะไปขอพร กราบไหว้ บูชา และขอในสิ่งที่เราหวังไว้ ทั้งในเรื่องของ ความรัก การงาน 
+        สุขภาพ ชีวิต และอื่นๆอีกมากมาย ไม่เพียงแต่ในประเทศไทยเท่านั้น สถานที่เหล่านี้มีที่ตั้งอยู่ทั่วโลกหลายประเทศ โดยมีหลักการเดียวกันคือเป็นแหล่งที่ตั้งเพื่อให้ประชาชนมาบูชานั่นเอง</h2>
+        </Card>;
+        <Row>
+        
+            <Col md ={6} className='topic-left hover01 topicbox'>
+            <Link to="love">
+                    <figure  className='position-relative'>
+                        <img src={require('./pic/topic1-love.png')} alt=""/>
+                    </figure>
+            </Link>
+            </Col>
+        
+            <Col md ={6} className='topic-right hover01 topicbox'>
+                    <figure  className='position-relative'>
+                        <img src={require('./pic/topic1-work.png')} alt=""/>
+                    </figure>
+            </Col>
+        </Row>
+        <Row>
+            <Col md ={6} className='topic-left hover01 topicbox'>
+                    <figure  className='position-relative'>
+                        <img src={require('./pic/topic1-money.png')} alt=""/>
+                    </figure>
+            </Col>
+            <Col md ={6} className='topic-right hover01 topicbox'>
+                    <figure  className='position-relative'>
+                        <img src={require('./pic/topic1-study.png')} alt=""/>
+                    </figure>
+            </Col>
+        </Row>
+        <Row>
+            <Col md ={6} className='topic-left hover01 topicbox'>
+                    <figure  className='position-relative'>
+                        <img src={require('./pic/topic1-healthy.png')} alt=""/>
+                    </figure>
+            </Col>
+            <Col md ={6} className='topic-right hover01 topicbox'>
+                    <figure  className='position-relative'>
+                        <img src={require('./pic/topic1-trade.png')} alt=""/>
+                    </figure>
+            </Col>
+        </Row>
+        </Container>
+        <HomepageFooter/>
+        </>
+      );
+    }
+
+
+export default Topic1;
