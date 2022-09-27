@@ -24,7 +24,7 @@ function Topic1Love(){
     return (
         <>
         <HomepageTopbar/>
-        
+        <body>
         <Row>
           <img src={require('./pic/topic1-picshow.png')} ></img>
         </Row>
@@ -37,17 +37,18 @@ function Topic1Love(){
         </div>
         
         <Container>
+        <Card body>
         <br/>
             {data.map((val)=>
                 val.id===2 && <h2 className='desc'>&emsp;&emsp;{val.attributes.desc}</h2>
             )}
         <br/>
-
+        </Card>;
         
         <div style={{ width: '80%', padding:20, textAlign:'center',margin:'auto',marginTop:50 }}>
 
             {data.map((val)=>
-                val.id===3 && <Card.Title><h3>{val.attributes.name}</h3></Card.Title>
+                val.id===3 && <Card.Title><h3 className='name'>{val.attributes.name}</h3></Card.Title>
                 
             )}
             <br/>
@@ -61,19 +62,19 @@ function Topic1Love(){
                     <Card.Text>
                     <p>{val.attributes.desc}</p>
                     </Card.Text>
-                    <h3>คาถาบูชา</h3>
+                    <h3 className='bold'>คาถาบูชา</h3>
                     <Card.Text>
                     {val.attributes.spell}
                     </Card.Text>
-                    <h3>ของไหว้บูชา</h3>
+                    <h3 className='bold'>ของไหว้บูชา</h3>
                     <Card.Text>
                     {val.attributes.gift}
                     </Card.Text>
-                    <h3>เวลาในการขอพร</h3>
+                    <h3 className='bold'>เวลาในการขอพร</h3>
                     <Card.Text>
                     {val.attributes.time}
                     </Card.Text>
-                    <h3>การเดินทาง</h3>
+                    <h3 className='bold'>การเดินทาง</h3>
                     <Card.Text>
                     {val.attributes.travel}
                     </Card.Text>
@@ -88,7 +89,7 @@ function Topic1Love(){
         <div style={{ width: '80%', padding:10, textAlign:'center',margin:'auto',marginTop:50 }}>
 
             {data.map((val)=>
-                val.id===4 && <Card.Title><h3>{val.attributes.name}</h3></Card.Title>
+                val.id===4 && <Card.Title><h3 className='name'>{val.attributes.name}</h3></Card.Title>
                 
             )}
             <br/>
@@ -101,19 +102,19 @@ function Topic1Love(){
                     <Card.Text>
                     <p>{val.attributes.desc}</p>
                     </Card.Text>
-                    <h3>คาถาบูชา</h3>
+                    <h3 className='bold'>คาถาบูชา</h3>
                     <Card.Text>
                     {val.attributes.spell}
                     </Card.Text>
-                    <h3>ของไหว้บูชา</h3>
+                    <h3 className='bold'>ของไหว้บูชา</h3>
                     <Card.Text>
                     {val.attributes.gift}
                     </Card.Text>
-                    <h3>เวลาในการขอพร</h3>
+                    <h3 className='bold'>เวลาในการขอพร</h3>
                     <Card.Text>
                     {val.attributes.time}
                     </Card.Text>
-                    <h3>การเดินทาง</h3>
+                    <h3 className='bold'>การเดินทาง</h3>
                     <Card.Text>
                     {val.attributes.travel}
                     </Card.Text>
@@ -128,7 +129,7 @@ function Topic1Love(){
         <div style={{ width: '80%', padding:10, textAlign:'center',margin:'auto',marginTop:50 }}>
 
             {data.map((val)=>
-                val.id===5 && <Card.Title><h3>{val.attributes.name}</h3></Card.Title>
+                val.id===5 && <Card.Title><h3 className='name'>{val.attributes.name}</h3></Card.Title>
                 
             )}
             <br/>
@@ -141,19 +142,19 @@ function Topic1Love(){
                     <Card.Text>
                     <p>{val.attributes.desc}</p>
                     </Card.Text>
-                    <h3>คาถาบูชา</h3>
+                    <h3 className='bold'>คาถาบูชา</h3>
                     <Card.Text>
                     {val.attributes.spell}
                     </Card.Text>
-                    <h3>ของไหว้บูชา</h3>
+                    <h3 className='bold'>ของไหว้บูชา</h3>
                     <Card.Text>
                     {val.attributes.gift}
                     </Card.Text>
-                    <h3>เวลาในการขอพร</h3>
+                    <h3 className='bold'>เวลาในการขอพร</h3>
                     <Card.Text>
                     {val.attributes.time}
                     </Card.Text>
-                    <h3>การเดินทาง</h3>
+                    <h3 className='bold'>การเดินทาง</h3>
                     <Card.Text>
                     {val.attributes.travel}
                     </Card.Text>
@@ -168,7 +169,7 @@ function Topic1Love(){
         <div style={{ width: '80%', padding:10, textAlign:'center',margin:'auto',marginTop:50 }}>
 
             {data.map((val)=>
-                val.id===6 && <Card.Title><h3>{val.attributes.name}</h3></Card.Title>
+                val.id===6 && <Card.Title><h3 className='name'>{val.attributes.name}</h3></Card.Title>
                 
             )}
             <br/>
@@ -181,19 +182,19 @@ function Topic1Love(){
                     <Card.Text>
                     <p>{val.attributes.desc}</p>
                     </Card.Text>
-                    <h3>คาถาบูชา</h3>
+                    <h3 className='bold'>คาถาบูชา</h3>
                     <Card.Text>
                     {val.attributes.spell}
                     </Card.Text>
-                    <h3>ของไหว้บูชา</h3>
+                    <h3 className='bold'>ของไหว้บูชา</h3>
                     <Card.Text>
                     {val.attributes.gift}
                     </Card.Text>
-                    <h3>เวลาในการขอพร</h3>
+                    <h3 className='bold'>เวลาในการขอพร</h3>
                     <Card.Text>
                     {val.attributes.time}
                     </Card.Text>
-                    <h3>การเดินทาง</h3>
+                    <h3 className='bold'>การเดินทาง</h3>
                     <Card.Text>
                     {val.attributes.travel}
                     </Card.Text>
@@ -206,7 +207,7 @@ function Topic1Love(){
             
         <div style={{ width: '80%', padding:10, textAlign:'center',margin:'auto',marginTop:50 }}>
             {data.map((val)=>
-                val.id===7 && <Card.Title><h3>{val.attributes.name}</h3></Card.Title>  
+                val.id===7 && <Card.Title><h3 className='name'>{val.attributes.name}</h3></Card.Title>  
             )}
             <br/>
             <Card.Img variant="top" src={require('./pic/love5.png')} style={{width:'50%',margin:'auto'}} />
@@ -218,19 +219,19 @@ function Topic1Love(){
                 <Card.Body>
                     <Card.Text><p>{val.attributes.desc}</p>
                     </Card.Text>
-                    <h3>คาถาบูชา</h3>
+                    <h3 className='bold'>คาถาบูชา</h3>
                     <Card.Text>
                     {val.attributes.spell}
                     </Card.Text>
-                    <h3>ของไหว้บูชา</h3>
+                    <h3 className='bold'>ของไหว้บูชา</h3>
                     <Card.Text>
                     {val.attributes.gift}
                     </Card.Text>
-                    <h3>เวลาในการขอพร</h3>
+                    <h3 className='bold'>เวลาในการขอพร</h3>
                     <Card.Text>
                     {val.attributes.time}
                     </Card.Text>
-                    <h3>การเดินทาง</h3>
+                    <h3 className='bold'>การเดินทาง</h3>
                     <Card.Text>
                     {val.attributes.travel}
                     </Card.Text>
@@ -241,6 +242,7 @@ function Topic1Love(){
                 
         </div>
         </Container>
+        </body>
         <HomepageFooter/>
         </>
       );

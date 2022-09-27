@@ -15,10 +15,10 @@ import About from './about';
 
 function HomepageTopbar() {
   return (
-    
-        <Navbar className='justify-content-between' bg='light' expand='lg' style={{ padding: 10 }}>
+    <div className='top-sticky'>
+        <Navbar className='justify-content-between'  expand='lg' style={{ backgroundColor:'black' }}>
           <Navbar.Brand href='/'>
-            <h1 style={{letterSpacing:2, color:'lightpink'}}> Moo Nai Dee</h1>
+            <img src={require('./pic/logo1.png')} className='logo' />
           </Navbar.Brand>
           <div style={{ display: 'flex' }}>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -29,6 +29,8 @@ function HomepageTopbar() {
             </Navbar.Collapse>
           </div>
         </Navbar>
+    </div>
+        
       
       
       

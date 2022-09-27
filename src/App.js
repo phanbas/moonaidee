@@ -15,13 +15,14 @@ import Topic2 from './topic2';
 import Topic3 from './topic3';
 import Topic1 from './topic1';
 import Topic1Love from './topic1-love';
+import Blogs from './blogger';
 
 
 function App() {
   return(
     <Router>
         <Routes>
-          <Route path='/' element ={<Homepage/>}></Route>
+          <Route path='/' element ={<Blogs/>}></Route>
           <Route path='/topic1' element ={<Topic1/>}></Route>
           <Route path='/topic2' element ={<Topic2/>}></Route>
           <Route path='/topic3' element ={<Topic3/>}></Route>
