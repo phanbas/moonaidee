@@ -13,14 +13,6 @@ import HomepagePicshow from './homepage-picshow';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 function Blogs(){
-
-    const [data, setData] = useState([])
-  useEffect(()=>{
-    fetch("https://phanbas-strapi.herokuapp.com/api/loves/")
-    .then(res =>res.json())
-    .then(data => setData(data.data));
-  }, []);
-
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
