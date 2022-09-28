@@ -1,11 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import React, { useEffect, useInsertionEffect } from 'react';
 import {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Card, Row, Col, Container, Navbar, Nav, Jumbotron} from 'react-bootstrap';
 import { BrowserRouter as Router,Routes, Route, Link} from 'react-router-dom';
-import HomepageSlide from './homepage-slide';
 import HomepageTopbar from './homepage-topbar';
 import HomepageFooter from './homepage-footer';
 

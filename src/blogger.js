@@ -39,7 +39,7 @@ function Blogs(){
       breakpoint: { max: 464, min: 0 },
       items: 1
     }
-  };
+  }
 
     return (
     <>
@@ -113,7 +113,7 @@ function Blogs(){
           <div className='m-1'>
             <img className='radius' src={require('./pic/topic1-work.png')}></img>
           </div>
-        </Carousel>;
+        </Carousel>
       </Card>
     </Container>
 <br/>

@@ -1,7 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import React, { useEffect, useInsertionEffect } from 'react';
-import {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Card, Row, Col, Container, Navbar, Nav, Jumbotron} from 'react-bootstrap';
 import { BrowserRouter as Router,Routes, Route, Link} from 'react-router-dom';
@@ -10,15 +7,6 @@ import HomepageFooter from './homepage-footer';
 
 
 function Topic1(){
-    const [data, setData] = useState([])
-  useEffect(()=>{
-    fetch("https://phanbas-strapi.herokuapp.com/api/loves/")
-    .then(res =>res.json())
-    .then(data => setData(data.data));
-  }, []);
-
-
-
     return (
         <>
         
@@ -39,21 +27,21 @@ function Topic1(){
         
             <Col md ={6} className='topic-left hover01 topicbox'>
             <Link to="love">
-                    <figure  className='position-relative'>
+                    <figure>
                         <img src={require('./pic/topic1-love.png')} alt=""/>
                     </figure>
             </Link>
             </Col>
         
             <Col md ={6} className='topic-right hover01 topicbox'>
-                    <figure  className='position-relative'>
+                    <figure>
                         <img src={require('./pic/topic1-work.png')} alt=""/>
                     </figure>
             </Col>
         </Row>
         <Row>
             <Col md ={6} className='topic-left hover01 topicbox'>
-                    <figure  className='position-relative'>
+                    <figure>
                         <img src={require('./pic/topic1-money.png')} alt=""/>
                     </figure>
             </Col>
@@ -65,12 +53,12 @@ function Topic1(){
         </Row>
         <Row>
             <Col md ={6} className='topic-left hover01 topicbox'>
-                    <figure  className='position-relative'>
+                    <figure>
                         <img src={require('./pic/topic1-healthy.png')} alt=""/>
                     </figure>
             </Col>
             <Col md ={6} className='topic-right hover01 topicbox'>
-                    <figure  className='position-relative'>
+                    <figure>
                         <img src={require('./pic/topic1-trade.png')} alt=""/>
                     </figure>
             </Col>

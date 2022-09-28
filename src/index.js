@@ -4,10 +4,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import HomepageTopbar from './homepage-topbar';
-import Homepage from './Homepage';
-import Topic2 from './topic2';
-import Picshow from './homepage-picshow';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

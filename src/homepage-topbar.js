@@ -3,15 +3,7 @@ import React, { useEffect, useInsertionEffect } from 'react';
 import {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Card, Row, Col, Container, Navbar, Nav, Jumbotron} from 'react-bootstrap'
-import Carousel from 'react-bootstrap/Carousel';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
-import HomepageTopic from './homepage-topic';
-import About from './about';
+
 
 function HomepageTopbar() {
   return (
