@@ -7,7 +7,6 @@ import {
   MDBBtn
 } from 'mdb-react-ui-kit';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css'
-
 export default function HomepageFooter() {
   return (
     <MDBFooter className='bg-dark text-center text-white'>

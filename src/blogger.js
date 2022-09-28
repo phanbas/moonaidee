@@ -1,17 +1,15 @@
-import logo from './logo.svg';
 
-import React, { useEffect, useInsertionEffect } from 'react';
-import {useState} from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Card, Row, Col, Container, Navbar, Nav, Jumbotron,Stack} from 'react-bootstrap';
-import { BrowserRouter as Router,Routes, Route, Link, BrowserRouter, } from 'react-router-dom';
-import { useNavigate  } from 'react-router-dom';
+import { Button, Card, Row, Col, Container} from 'react-bootstrap';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './blogger.css'
 import HomepageTopbar from './homepage-topbar';
 import HomepageFooter from './homepage-footer';
-import HomepagePicshow from './homepage-picshow';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import pic from './pic/picshow.png'
+
 function Blogs(){
   const responsive = {
     superLargeDesktop: {
@@ -36,7 +34,8 @@ function Blogs(){
     return (
     <>
     <HomepageTopbar/>
-    <HomepagePicshow/>
+    <img src={pic}></img>
+
     <br/>
     <Container>
         <Row>
