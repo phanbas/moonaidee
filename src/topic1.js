@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Card, Row, Col, Container, Navbar, Nav, Jumbotron} from 'react-bootstrap';
+import { Card, Row, Col, Container} from 'react-bootstrap';
 import { BrowserRouter as Router,Routes, Route, Link} from 'react-router-dom';
 import HomepageTopbar from './homepage-topbar';
 import HomepageFooter from './homepage-footer';

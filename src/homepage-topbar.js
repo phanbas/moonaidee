@@ -1,8 +1,7 @@
 import './App.css'
-import React, { useEffect, useInsertionEffect } from 'react';
-import {useState} from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Card, Row, Col, Container, Navbar, Nav, Jumbotron} from 'react-bootstrap'
+import { Navbar, Nav} from 'react-bootstrap'
 
 
 function HomepageTopbar() {

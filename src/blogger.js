@@ -36,7 +36,6 @@ function Blogs(){
     return (
     <>
     <HomepageTopbar/>
-    
     <HomepagePicshow/>
     <br/>
     <Container>
@@ -201,8 +200,8 @@ function Blogs(){
       
     </Container>
     <br/>
-    
     <HomepageFooter/>
+    
     </>
       );
     }

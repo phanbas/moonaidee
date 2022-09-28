@@ -1,16 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
-import React, { useEffect, useInsertionEffect } from 'react';
-import {useState} from 'react';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Card, Row, Col, Container, Navbar, Nav, Jumbotron} from 'react-bootstrap';
-import { BrowserRouter as Router,Routes, Route, Link, BrowserRouter, } from 'react-router-dom';
-import { useNavigate  } from 'react-router-dom';
-import HomepageSlide from './homepage-slide';
-import Topic1 from './topic1';
-import Profile from './pages/profile';
-import ErrorPage from './pages/errorpage';
-import pictopic1 from './pic/topic1-picshow.png';
 
 function HomepageTopic(){
 
